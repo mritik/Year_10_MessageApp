@@ -94,6 +94,7 @@
     
 // Retrieve Firebase Messaging object.
   const messaging = firebase.messaging();
+  messaging.usePublicVapidKey('BAUyIUXgF9C-uobGgRAVfj6jvHE-z3pnGR1UEjVOLDG3yWC8XICt6NYK8O42dm9AqtnC8SFnL5OMmiHiB4PqgDw');
     
   // IDs of divs that display registration token UI or request permission UI.
   const tokenDivId = 'token_div';
@@ -206,6 +207,7 @@
 
   // Add a message to the messages element.
   function appendMessage(payload) {
+    console.log('appendMessage for : ', payload);
     const messagesElement = document.querySelector('#messages_div');
     const dataHeaderElement = document.createElement('h5');
     const dataElement = document.createElement('pre');

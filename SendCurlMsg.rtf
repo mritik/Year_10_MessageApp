@@ -1,40 +1,18 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2577
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 HelveticaNeue;\f2\fswiss\fcharset0 Helvetica;
-}
-{\colortbl;\red255\green255\blue255;\red27\green31\blue34;\red27\green31\blue34;\red0\green0\blue0;
-\red255\green255\blue255;\red98\green98\blue98;\red98\green98\blue98;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c14118\c16078\c18039;\cssrgb\c14118\c16078\c18039;\cssrgb\c0\c0\c0\c54118;
-\cssrgb\c100000\c100000\c100000;\cssrgb\c45882\c45882\c45882;\cssrgb\c45882\c45882\c45882;\cssrgb\c0\c0\c0;}
-\margl1440\margr1440\vieww51000\viewh25060\viewkind0
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 HelveticaNeue;\f2\fswiss\fcharset0 Helvetica;
+\f3\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red27\green31\blue34;\red0\green0\blue0;\red255\green255\blue255;
+\red98\green98\blue98;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c14118\c16078\c18039;\cssrgb\c0\c0\c0\c54118;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c45882\c45882\c45882;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww28600\viewh15300\viewkind0
 \deftab720
 \pard\pardeftab720\sl380\partightenfactor0
 
 \f0\fs27\fsmilli13600 \cf2 \expnd0\expndtw0\kerning0
-# Send to Firefox Client\cf3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec3 \
-\pard\pardeftab720\sl380\partightenfactor0
-\cf3 curl -X POST -H "Authorization: key=
-\f1\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 AAAAyQ7ogZA:APA91bFRQBsZeMlxSMsK6Ov9imGRZhdamLLu1BbRvTZa6dudjmG9bwMuruDiqUGZ5_Z14lc70bhr5I-vLACwJzQF5eAyr5AecUWX8kJ5IHcOdpQ09ekUMQqvjXihKPJVm5_rwE98Xwfp
-\f0\fs27\fsmilli13600 \cf3 \cb1 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec3 " -H "Content-Type: application/json" -d '\{\
-  "notification": \{\
-    "title": "Portugal vs. Denmark",\
-    "body": "5 to 1",\
-    "icon": "firebase-logo.png",\
-    "click_action": "http://localhost:8081"\
-  \},\
-  "to": "
-\f2\fs28 \cf6 \cb5 \strokec6 cG5FVnTsD4vMqogkLlABsE:APA91bHPhjopDB-ViwI3hh-72NdhDgv2vippc5M13AFYtpCMaSDPac3Q0yvhPsOSkkHdTYiMpSZLKBbaiveKnzCMXfxBqU3UEJo-b9GVL6QL_B6GL5-z5MuhhWJU551lwbL3ErhiTsYA
-\f0\fs27\fsmilli13600 \cf3 \cb1 \strokec3 "\
-\}' "https://fcm.googleapis.com/fcm/send"\
-\
-\pard\pardeftab720\sl380\partightenfactor0
-\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \
-# Send to Firefox Client\
+# Send to Firefox Client\cf2 \
 curl -X POST -H "Authorization: key=
-\f1\fs26 \cf4 \cb5 AAAAyQ7ogZA:APA91bFRQBsZeMlxSMsK6Ov9imGRZhdamLLu1BbRvTZa6dudjmG9bwMuruDiqUGZ5_Z14lc70bhr5I-vLACwJzQF5eAyr5AecUWX8kJ5IHcOdpQ09ekUMQqvjXihKPJVm5_rwE98Xwfp
+\f1\fs26 \cf3 \cb4 AAAAyQ7ogZA:APA91bFRQBsZeMlxSMsK6Ov9imGRZhdamLLu1BbRvTZa6dudjmG9bwMuruDiqUGZ5_Z14lc70bhr5I-vLACwJzQF5eAyr5AecUWX8kJ5IHcOdpQ09ekUMQqvjXihKPJVm5_rwE98Xwfp
 \f0\fs27\fsmilli13600 \cf2 \cb1 " -H "Content-Type: application/json" -d '\{\
   "notification": \{\
     "title": "Portugal vs. Denmark",\
@@ -43,11 +21,26 @@ curl -X POST -H "Authorization: key=
     "click_action": "http://localhost:8081"\
   \},\
   "to": "
-\f2\fs28 \cf7 \cb5 eLj2QH9AIAICqAMIGPEfML:APA91bHOp1YaRk-66_ogSAyQoCLi65zF6HKKhk6Yd5H-5oiqD5NYZDKMeKerQNg0PzNLMoSLzYj5tlcjZMkjCFngtKDRX9g2xOXOd2lcCVPcUzhJQCwU39cYThZqXPfATcdpyXUaLYNp
+\f2\fs28 \cf5 \cb4 cG5FVnTsD4vMqogkLlABsE:APA91bHPhjopDB-ViwI3hh-72NdhDgv2vippc5M13AFYtpCMaSDPac3Q0yvhPsOSkkHdTYiMpSZLKBbaiveKnzCMXfxBqU3UEJo-b9GVL6QL_B6GL5-z5MuhhWJU551lwbL3ErhiTsYA
 \f0\fs27\fsmilli13600 \cf2 \cb1 "\
-\}' "https://fcm.googleapis.com/fcm/send"\cf2 \
+\}' "https://fcm.googleapis.com/fcm/send"\
+\
+\
+# Send to Firefox Client\
+curl -X POST -H "Authorization: key=
+\f1\fs26 \cf3 \cb4 AAAAyQ7ogZA:APA91bFRQBsZeMlxSMsK6Ov9imGRZhdamLLu1BbRvTZa6dudjmG9bwMuruDiqUGZ5_Z14lc70bhr5I-vLACwJzQF5eAyr5AecUWX8kJ5IHcOdpQ09ekUMQqvjXihKPJVm5_rwE98Xwfp
+\f0\fs27\fsmilli13600 \cf2 \cb1 " -H "Content-Type: application/json" -d '\{\
+  "notification": \{\
+    "title": "Portugal vs. Denmark",\
+    "body": "5 to 1",\
+    "icon": "firebase-logo.png",\
+    "click_action": "http://localhost:8081"\
+  \},\
+  "to": "
+\f3\fs24 \cf6 \outl0\strokewidth0 \strokec6 cIb4O12NJaMfqP2xLiuX5T:APA91bFXWVAjcfUApcSdNczF_y6GsXH7Z1VDfXdiIbe6DMmAc1P1n6d95XsshLvaZwYSHVl9bkg1iPQFat4S-S4gwSqAUFhyKrTEHvCqKYqre5H2XC5HOrI-i4iWBAUI1BZp-p3g-JYw
+\f0\fs27\fsmilli13600 \cf2 \outl0\strokewidth0 "\
+\}' "https://fcm.googleapis.com/fcm/send"\
 \pard\pardeftab720\sl320\partightenfactor0
 
-\fs26 \cf8 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec8 \
+\fs26 \cf6 \
 }

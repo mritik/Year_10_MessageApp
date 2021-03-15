@@ -1,57 +1,34 @@
+<!-- Use Below when Web Hosted -->
 // Import and configure the Firebase SDK
 // These scripts are made available when the app is served or deployed on Firebase Hosting
 // If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup
+
 importScripts('/__/firebase/8.3.0/firebase-app.js');
 importScripts('/__/firebase/8.3.0/firebase-messaging.js');
-//importScripts('/__/firebase/init.js');
+<!--importScripts('/__/firebase/init.js');-->
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-      apiKey: "AIzaSyDsCfVVy7bHnGaKoVZ_ikwzahwQycMQoMs",
-      authDomain: "user-auth-d707b.firebaseapp.com",
-      databaseURL: "https://user-auth-d707b-default-rtdb.firebaseio.com",
-      projectId: "user-auth-d707b",
-      storageBucket: "user-auth-d707b.appspot.com",
-      messagingSenderId: "549822857981",
-      appId: "1:549822857981:web:7c15df144daf04f6e7b494",
-      measurementId: "G-QH58VF587C"
-};
+/** 
+importScripts('https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/8.3.0/firebase-messaging.js');
+*/
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);    
-    
+  var firebaseConfig = {
+    apiKey: "AIzaSyDTMXdl2eWuhP1JtLKDpukSZf0RZICNPyU",
+    authDomain: "messageapptest-cbcb0.firebaseapp.com",
+    projectId: "messageapptest-cbcb0",
+    storageBucket: "messageapptest-cbcb0.appspot.com",
+    messagingSenderId: "863538545040",
+    appId: "1:863538545040:web:21f106ad9dc0932bedf315",
+    measurementId: "G-GDQY5K0HCC"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+      
+
 // Retrieve Firebase Messaging object.
 const messaging = firebase.messaging();
-
-/**
- * Here is is the code snippet to initialize Firebase Messaging in the Service
- * Worker when your app is not hosted on Firebase Hosting.
-
- // Give the service worker access to Firebase Messaging.
- // Note that you can only use Firebase Messaging here. Other Firebase libraries
- // are not available in the service worker.
- importScripts('https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js');
- importScripts('https://www.gstatic.com/firebasejs/8.3.0/firebase-messaging.js');
-
- // Initialize the Firebase app in the service worker by passing in
- // your app's Firebase config object.
- // https://firebase.google.com/docs/web/setup#config-object
- firebase.initializeApp({
-   apiKey: 'api-key',
-   authDomain: 'project-id.firebaseapp.com',
-   databaseURL: 'https://project-id.firebaseio.com',
-   projectId: 'project-id',
-   storageBucket: 'project-id.appspot.com',
-   messagingSenderId: 'sender-id',
-   appId: 'app-id',
-   measurementId: 'G-measurement-id',
- });
-
- // Retrieve an instance of Firebase Messaging so that it can handle background
- // messages.
- const messaging = firebase.messaging();
- **/
-
+messaging.usePublicVapidKey('BAUyIUXgF9C-uobGgRAVfj6jvHE-z3pnGR1UEjVOLDG3yWC8XICt6NYK8O42dm9AqtnC8SFnL5OMmiHiB4PqgDw');
 
 // If you would like to customize notifications that are received in the
 // background (Web app is closed or not in browser focus) then you should

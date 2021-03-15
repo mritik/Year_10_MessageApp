@@ -117,6 +117,7 @@
     // subsequent calls to getToken will return from cache.
     messaging.getToken({vapidKey: 'BAUyIUXgF9C-uobGgRAVfj6jvHE-z3pnGR1UEjVOLDG3yWC8XICt6NYK8O42dm9AqtnC8SFnL5OMmiHiB4PqgDw'}).then((currentToken) => {
       if (currentToken) {
+        console.log('Newly Received currentToken=' + currentToken);
         sendTokenToServer(currentToken);
         updateUIForPushEnabled(currentToken);
       } else {
@@ -227,7 +228,7 @@
     //alert("in updateUIForPushEnabled(" + currentToken + ")");  
     showHideDiv(tokenDivId, true);
     showHideDiv(permissionDivId, true);
-    showHideDiv(messagesDivId, true);
+    //showHideDiv(messagesDivId, true);
     showToken(currentToken);
   }
 

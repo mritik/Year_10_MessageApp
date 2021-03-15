@@ -29,6 +29,7 @@ importScripts('https://www.gstatic.com/firebasejs/8.3.0/firebase-messaging.js');
 // Retrieve Firebase Messaging object.
 const messaging = firebase.messaging();
 messaging.usePublicVapidKey('BAUyIUXgF9C-uobGgRAVfj6jvHE-z3pnGR1UEjVOLDG3yWC8XICt6NYK8O42dm9AqtnC8SFnL5OMmiHiB4PqgDw');
+console.log('[firebase-messaging-sw.js] Registered for background message handling');
 
 // If you would like to customize notifications that are received in the
 // background (Web app is closed or not in browser focus) then you should

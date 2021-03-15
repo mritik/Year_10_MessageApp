@@ -3,9 +3,8 @@
 // If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup
 importScripts('/__/firebase/8.3.0/firebase-app.js');
 importScripts('/__/firebase/8.3.0/firebase-messaging.js');
-importScripts('/__/firebase/init.js');
+//importScripts('/__/firebase/init.js');
 
-/*
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
       apiKey: "AIzaSyDsCfVVy7bHnGaKoVZ_ikwzahwQycMQoMs",
@@ -20,7 +19,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);    
-*/
     
 // Retrieve Firebase Messaging object.
 const messaging = firebase.messaging();
